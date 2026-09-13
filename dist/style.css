@@ -69,3 +69,14 @@ body.photo-mode:after{content:'PHOTO MODE  ·  ← →  ↑ ↓  ·  F';position
 .lap-splits{top:228px}
 @media(max-width:850px){.alert{top:auto;bottom:206px;font-size:11px}.lap-delta{right:20px;top:auto;bottom:250px}.ghost-delta{top:auto;bottom:286px;left:auto;right:20px;transform:none}.lap-splits{top:174px}#toast{bottom:88px}}
 @media(max-height:600px) and (orientation:landscape){.alert{top:98px;bottom:auto}.lap-delta{top:auto;bottom:92px;right:20px}.ghost-delta{top:142px;bottom:auto;right:20px;left:auto;transform:none}.lap-splits{top:147px}#toast{bottom:74px}}
+.item-slot button.dragging{border-color:#ffd95e;box-shadow:0 0 30px #ffd95e33}
+.item-slot button.dragging small{color:#ffd95e}
+#itemIcon{transition:color .2s}
+body.intro #hud,body.intro .top-actions,body.intro #touch{opacity:0;pointer-events:none;transition:opacity .25s}
+body.intro:after{content:'SPACE / タップでスキップ';position:fixed;left:50%;bottom:40px;transform:translateX(-50%);font:600 10px sans-serif;letter-spacing:3px;color:#ffffffb0;z-index:8}
+#startLights{position:fixed;left:50%;top:32%;transform:translateX(-50%);display:flex;gap:15px;z-index:7;pointer-events:none}
+#startLights i{width:22px;height:22px;border-radius:50%;background:#ffffff1c;border:2px solid #ffffff4d;box-shadow:inset 0 2px 6px #0004}
+#startLights i.on{background:#ff5f4c;border-color:#ff8f7e;box-shadow:0 0 20px #ff5f4c99}
+#startLights.go i.on{background:#8dff9c;border-color:#b6ffbe;box-shadow:0 0 26px #8dff9caa}
+body.intro #startLights{display:none}
+@media(max-width:850px){#startLights{top:30%;gap:11px}#startLights i{width:17px;height:17px}}
