@@ -20,3 +20,52 @@ body:not(.racing){overflow-y:auto}.menu{margin-bottom:28px}button[disabled]{opac
 #countdown{top:47%}.race-banner{top:27%}body.airborne #touch button[data-key="ArrowDown"]{display:none}.guide-note{font-size:13px}.guide-grid p,.guide-grid b{font-size:14px}
 @media(max-width:850px){.ghost-delta{top:auto;bottom:250px;left:auto;right:22px;transform:none}}
 @media(max-height:600px) and (orientation:landscape){.ghost-delta{top:145px;bottom:auto;right:20px}.race-banner{top:37%}#countdown{top:52%}}
+
+/* Zenith edition */
+.records{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:7px}
+.record{background:#16293855;border:1px solid #ffffff14;border-radius:6px;padding:6px 7px;display:flex;flex-direction:column;gap:2px;font-size:9px;color:#a9bcc6}
+.record.current{border-color:#dfff8377;background:#dfff830f}
+.record b{font:700 12px 'Barlow Condensed',Impact;color:#dfff83}
+.record span{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.record small{font:600 11px 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums;color:#e6eef2}
+.profile-strip{display:flex;gap:16px;margin-top:9px;font-size:9px;letter-spacing:1px;color:#9db2be}
+.profile-strip b{display:block;font:700 17px 'Barlow Condensed',Impact;color:#e7f1f5;letter-spacing:0}
+.preferences .volume{display:flex;align-items:center;gap:8px}
+.preferences input[type=range]{-webkit-appearance:none;appearance:none;width:92px;height:3px;border-radius:3px;background:#ffffff2e}
+.preferences input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:#dcff7e;border:0;cursor:pointer}
+.preferences input[type=range]::-moz-range-thumb{width:13px;height:13px;border:0;border-radius:50%;background:#dcff7e;cursor:pointer}
+.preferences+.preferences{margin-top:-8px}
+.alert{position:absolute;left:50%;top:150px;transform:translateX(-50%);font:700 13px 'Noto Sans JP',sans-serif;letter-spacing:1px;padding:6px 15px;border-radius:20px;background:#122738b5;border:1px solid #ffffff24;color:#e3eef3;white-space:nowrap}
+.alert:empty{display:none}
+.alert.danger{color:#ffd0c0;border-color:#ff9d7c66;background:#3a1c23bf;animation:alertPulse .7s infinite alternate}
+.alert.good{color:#ffeaa0;border-color:#ffe27366}
+@keyframes alertPulse{from{opacity:.72}to{opacity:1}}
+.lap-delta{position:absolute;right:38px;top:150px;font:700 17px 'Barlow Condensed',Impact;font-variant-numeric:tabular-nums;color:#cfe0e8}
+.lap-delta:empty{display:none}
+.record-line{font-size:12px;color:#c8d8e2;margin:-6px 0 14px}
+.record-line.new-record{color:#dcff7e;font-weight:700}
+.record-line:empty{display:none}
+.race-stats{grid-template-columns:repeat(3,1fr)}
+.race-stats b{font-size:20px}
+#sound.on{border-color:#dfff8380;color:#e9ffb4}
+body.photo-mode #hud,body.photo-mode header,body.photo-mode .vignette,body.photo-mode #touch,body.photo-mode #raceBanner,body.photo-mode #toast,body.photo-mode .modal{display:none!important}
+body.photo-mode:after{content:'PHOTO MODE  ·  ← →  ↑ ↓  ·  F';position:fixed;left:50%;bottom:34px;transform:translateX(-50%);font:600 10px sans-serif;letter-spacing:3px;color:#ffffffcc;text-shadow:0 2px 10px #0008;z-index:8}
+@media(max-width:850px){.records{grid-template-columns:repeat(2,1fr)}.alert{top:auto;bottom:210px;font-size:11px}.lap-delta{right:20px;top:auto;bottom:250px}.profile-strip{gap:12px}}
+@media(max-height:600px) and (orientation:landscape){.alert{top:118px;bottom:auto}.lap-delta{top:118px;bottom:auto}}
+.tracks i.rec{font:600 11px 'Barlow Condensed',sans-serif;letter-spacing:.5px;font-variant-numeric:tabular-nums;opacity:.55}
+.tracks i.rec.has-time{opacity:.9;color:#dfff83;font-size:13px}
+.tracks button.selected i.rec.has-time{color:#f3ffce}
+.preferences{flex-wrap:wrap;gap:10px 18px;justify-content:flex-start}
+.preferences>label,.preferences>button{white-space:nowrap}
+@media(max-height:940px) and (min-width:851px){.menu{margin-top:78px}h1{font-size:62px;margin:10px 0 12px}.mode-tabs button{padding:7px 0 10px}.mode-description{margin:7px 0 9px;font-size:11px}.label-row{margin:10px 0 6px}.tracks{gap:4px}.tracks button{padding:6px 12px;gap:12px}.tracks button>b{font-size:23px}.tracks button span{font-size:13px}.tracks button small{font-size:10px}.kart-tabs button{padding:6px 3px;font-size:15px}.kart-stats{margin-top:7px}.colors{margin:12px 0 10px}.preferences{margin:8px 0 12px;gap:7px 14px;font-size:11px}.primary{padding:12px 18px;font-size:15px}.profile-strip{margin-top:7px;gap:13px}.profile-strip b{font-size:15px}.menu-tip{margin-top:8px}.showcase{top:21%;bottom:24%}}
+@media(max-height:790px) and (min-width:851px){.menu{margin-top:62px}h1{font-size:52px;margin:8px 0 10px}.eyebrow{font-size:10px}.mode-description{margin:6px 0 8px}.tracks button{padding:5px 11px}.tracks button small{font-size:9px}.label-row{margin:8px 0 5px}.colors{margin:9px 0 8px}.colors>button{width:20px;height:20px}.preferences{margin:7px 0 9px}.primary{padding:10px 16px;font-size:14px}.kart-tabs button{padding:5px 3px;font-size:14px}.menu-tip{font-size:9px;margin-top:6px}.profile-strip{margin-top:5px}.profile-strip b{font-size:14px}}
+@media(min-width:1550px) and (min-height:900px){.menu{margin-top:9vh}.tracks button{padding:9px 14px}}
+@media(max-width:700px){h1{font-size:min(68px,14.5vw)}.menu{margin-top:84px}}
+/* Message stack: alert, ghost delta, toast and lap splits each get their own lane. */
+#toast{top:auto;bottom:96px}
+.alert{top:106px}
+.ghost-delta{top:152px}
+.lap-delta{right:38px;top:188px}
+.lap-splits{top:228px}
+@media(max-width:850px){.alert{top:auto;bottom:206px;font-size:11px}.lap-delta{right:20px;top:auto;bottom:250px}.ghost-delta{top:auto;bottom:286px;left:auto;right:20px;transform:none}.lap-splits{top:174px}#toast{bottom:88px}}
+@media(max-height:600px) and (orientation:landscape){.alert{top:98px;bottom:auto}.lap-delta{top:auto;bottom:92px;right:20px}.ghost-delta{top:142px;bottom:auto;right:20px;left:auto;transform:none}.lap-splits{top:147px}#toast{bottom:74px}}
